@@ -234,6 +234,35 @@ ol {
   opacity: 1;
 }
 
+.sending-cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6431372549);
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sending-cover .sending-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #33265e;
+  animation: loading 2s infinite;
+}
+
+._sending {
+  opacity: 1;
+  visibility: visible;
+}
+
 .form-part {
   width: 635px;
   margin: auto;
@@ -328,6 +357,10 @@ ol {
   transform: translate(-50%, -50%);
 }
 
+.form-part .checkmark._error {
+  border: 2px solid rgb(170, 2, 2);
+}
+
 .form-part input[type=checkbox] {
   display: none;
 }
@@ -373,6 +406,23 @@ ol {
 .success-sent__subheading {
   font-size: 20px;
   line-height: 24px;
+}
+
+@keyframes loading {
+  0% {
+    transform: scale(1);
+    background-color: #33265e;
+  }
+
+  50% {
+    transform: scale(3.5);
+    background-color: transparent;
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: #33265e;
+  }
 }
 
 .courses {
@@ -768,76 +818,31 @@ li > ol {
 }
 
 .no-webp .tutor-1-pic {
-  background: url("../img/tutors/v-galouzine.jpg") no-repeat; }
-
-.tutor-1-pic {
-  background-position: center;
-  background-size: cover;
-}
+  background: url("../img/tutors/v-galouzine.jpg") center/cover no-repeat; }
 
 .no-webp .tutor-2-pic {
-  background: url("../img/tutors/konstantin.jpg") no-repeat; }
-
-.tutor-2-pic {
-  background-position: center;
-  background-size: cover;
-}
+  background: url("../img/tutors/konstantin.jpg") center/cover no-repeat; }
 
 .no-webp .tutor-3-pic {
-  background: url("../img/tutors/d-devdariani.jpg") no-repeat; }
-
-.tutor-3-pic {
-  background-position: center;
-  background-size: cover;
-}
+  background: url("../img/tutors/d-devdariani.jpg") center/cover no-repeat; }
 
 .no-webp .tutor-4-pic {
-  background: url("../img/tutors/i-feoktistova.jpg") no-repeat; }
-
-.tutor-4-pic {
-  background-position: center 30%;
-  background-size: cover;
-}
+  background: url("../img/tutors/i-feoktistova.jpg") center 30%/cover no-repeat; }
 
 .no-webp .tutor-5-pic {
-  background: url("../img/tutors/b-borlakov.jpeg") no-repeat; }
-
-.tutor-5-pic {
-  background-position: center 30%;
-  background-size: cover;
-}
+  background: url("../img/tutors/b-borlakov.jpeg") center 30%/cover no-repeat; }
 
 .no-webp .tutor-6-pic {
-  background: url("../img/tutors/y-green.jpg") no-repeat; }
-
-.tutor-6-pic {
-  background-position: center;
-  background-size: cover;
-}
+  background: url("../img/tutors/y-green.jpg") center/cover no-repeat; }
 
 .no-webp .tutor-7-pic {
-  background: url("../img/tutors/y-savikovskaya.jpg") no-repeat; }
-
-.tutor-7-pic {
-  background-position: center 30%;
-  background-size: cover;
-}
+  background: url("../img/tutors/y-savikovskaya.jpg") center 30%/cover no-repeat; }
 
 .no-webp .tutor-10-pic {
-  background: url("../img/tutors/y-mouziafarova-bck.jpg") no-repeat; }
-
-.tutor-10-pic {
-  background-position: center 30%;
-  background-size: cover;
-}
+  background: url("../img/tutors/y-mouziafarova-bck.jpg") center 30%/cover no-repeat; }
 
 .no-webp .tutor-12-pic {
-  background: url("../img/tutors/t-seintis.jpg") no-repeat; }
-
-.tutor-12-pic {
-  background-position: center 30%;
-  background-size: cover;
-}
+  background: url("../img/tutors/t-seintis.jpg") center 30%/cover no-repeat; }
 
 .policy {
   margin: 230px 0;
@@ -1228,23 +1233,23 @@ li > ol {
 
 .webp .f-sure { background: url(../img/for-sure.webp) center/cover no-repeat; }
 
-.webp .tutor-1-pic { background: url(../img/tutors/v-galouzine.webp) no-repeat; }
+.webp .tutor-1-pic { background: url(../img/tutors/v-galouzine.webp) center/cover no-repeat; }
 
-.webp .tutor-2-pic { background: url(../img/tutors/konstantin.webp) no-repeat; }
+.webp .tutor-2-pic { background: url(../img/tutors/konstantin.webp) center/cover no-repeat; }
 
-.webp .tutor-3-pic { background: url(../img/tutors/d-devdariani.webp) no-repeat; }
+.webp .tutor-3-pic { background: url(../img/tutors/d-devdariani.webp) center/cover no-repeat; }
 
-.webp .tutor-4-pic { background: url(../img/tutors/i-feoktistova.webp) no-repeat; }
+.webp .tutor-4-pic { background: url(../img/tutors/i-feoktistova.webp) center 30%/cover no-repeat; }
 
-.webp .tutor-5-pic { background: url(../img/tutors/b-borlakov.webp) no-repeat; }
+.webp .tutor-5-pic { background: url(../img/tutors/b-borlakov.webp) center 30%/cover no-repeat; }
 
-.webp .tutor-6-pic { background: url(../img/tutors/y-green.webp) no-repeat; }
+.webp .tutor-6-pic { background: url(../img/tutors/y-green.webp) center/cover no-repeat; }
 
-.webp .tutor-7-pic { background: url(../img/tutors/y-savikovskaya.webp) no-repeat; }
+.webp .tutor-7-pic { background: url(../img/tutors/y-savikovskaya.webp) center 30%/cover no-repeat; }
 
-.webp .tutor-10-pic { background: url(../img/tutors/y-mouziafarova-bck.webp) no-repeat; }
+.webp .tutor-10-pic { background: url(../img/tutors/y-mouziafarova-bck.webp) center 30%/cover no-repeat; }
 
-.webp .tutor-12-pic { background: url(../img/tutors/t-seintis.webp) no-repeat; }
+.webp .tutor-12-pic { background: url(../img/tutors/t-seintis.webp) center 30%/cover no-repeat; }
 
 @media (max-width: 575.98px) {
 

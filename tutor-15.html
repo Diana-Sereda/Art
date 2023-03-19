@@ -4,14 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
   <!-- Slider  -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20230316163409" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css?_v=20230319103215" />
   <!-- Google fonts  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&_v=20230316163409" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap&_v=20230319103215" rel="stylesheet">
   <!-- Style  -->
-  <link rel="stylesheet" href="css/style.min.css?_v=20230316163409">
+  <link rel="stylesheet" href="css/style.min.css?_v=20230319103215">
   <title>Anastasia Cherkasova</title>
 </head>
 
@@ -127,25 +132,27 @@
   </div>
 </section>
     <!-- Form  -->
-
+<div class="sending-cover">
+  <div class="sending-sign"></div>
+</div>
 <section id="study-form">
   <div class="container">
     <div class="form-part">
       <h4 class="section-heading form-part__heading">Do you want to study with us?</h4>
       <h5 class="form-part__subheading">Or do you still have questions?</h5>
-      <form action="#">
+      <form id="form" action="#" method="POST">
         <input type="text" placeholder="Your Full Name*" name="name" required>
         <input type="tel" placeholder="Phone Number*" name="tel" required>
         <textarea name="message" placeholder="Message"></textarea>
         <label for="policy" class="policy-agree">
-          <input type="checkbox" name="policy" id="policy">
+          <input id="policy" type="checkbox" class="_req agree" requared>
           <span class="checkmark"></span>
           <span>i agree with the <a href="policy.html" target="_blank" rel="noopener noreferrer">privacy policy</a>
           </span>
-
         </label>
 
-        <button>Send <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button type="submit">Send <svg width="58" height="58" viewBox="0 0 58 58" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
             <path
               d="M33.5209 26.0344C33.5209 25.4821 33.0732 25.0344 32.5209 25.0344L23.5209 25.0344C22.9686 25.0344 22.5209 25.4821 22.5209 26.0344C22.5209 26.5866 22.9686 27.0344 23.5209 27.0344L31.5209 27.0344L31.5209 35.0344C31.5209 35.5866 31.9686 36.0344 32.5209 36.0344C33.0732 36.0344 33.5209 35.5866 33.5209 35.0344L33.5209 26.0344ZM32.1081 27.8613L33.228 26.7415L31.8138 25.3273L30.6939 26.4471L32.1081 27.8613Z"
               fill="white" />
@@ -189,6 +196,14 @@
     </div>
   </div>
 </footer>
+
+<!-- Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js?_v=20230319103215"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js?_v=20230319103215"></script>
+
+<script src="libs//just-validate.min.js?_v=20230319103215"></script>
+<!-- Минимизированный файл js  -->
+<script src="js/script.min.js?_v=20230319103215"></script>
 </body>
 
 </html>
